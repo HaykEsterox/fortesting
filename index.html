@@ -8,6 +8,23 @@
     <title>Document</title>
 </head>
 <body>
-<h1>Hello this is my test commitin git </h1>
+
+
+
+<script>
+    "use strict"
+
+    let obj = {
+        name:"John",
+        age:52,
+        [Symbol.toPrimitive](hint){
+            if(hint == "number"){
+                return this.age;
+            }
+        }
+    }
+    alert(+obj)
+
+</script>
 </body>
 </html>
