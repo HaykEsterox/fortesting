@@ -15,16 +15,6 @@
 <script>
     "use strict"
 
-    let obj = {
-        name:"John",
-        age:52,
-        [Symbol.toPrimitive](hint){
-            if(hint == "number"){
-                return this.age;
-            }
-        }
-    }
-    // alert(+obj)
 
 </script>
 </body>
