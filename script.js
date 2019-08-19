@@ -109,22 +109,58 @@
 //     return objKeys;
 // }
 //// console.log(loopObj(userClone));
-let obj = {};
-console.log(isEmpty(obj));
-obj.name="object";
-console.log(isEmpty(obj));
-
-function isEmpty(object) {
-    let x = 0;
-    for (let key in object){
-        x++
-    }
-    return (x>0)?true:false;
-}
-
-// let y = [1,2,3,1];
-// for (let x = 0 ;x<y.length;x++){
-//     console.log(y[x]);
+// let obj = {};
+// console.log(isEmpty(obj));
+// obj.name="object";
+// console.log(isEmpty(obj));
+//
+// function isEmpty(object) {
+//     let x = 0;
+//     for (let key in object){
+//         x++
+//     }
+//     return (x>0)?true:false;
 // }
+
+// short way
+// function isEmpty(obj) {
+//     for (let key in obj) {
+//         // if the loop has started, there is a property
+//         return false;
+//     }
+//     return true;
+// }
+//
+// let salaries = {
+//     John:0,
+//     Ann:0,
+//     Pete:0,
+// }
+// let x = 0;
+// for(let salary in salaries){
+//     x+=salaries[salary];
+// }
+// console.log((x>0)?x:"no Salary");
+
+
+// arrow functions
+let group = {
+    title: "Our Group",
+    students: "none",
+    marks:"none"
+};
+
+(() => {
+    let arr = [];
+    let x = 0;
+    for(let key in group){
+        arr[x]=group[key];
+        x++;
+    }
+    return console.log(arr);
+})();
+
+console.log(((a,b)=>a*b)(5,2));
+
 
 
