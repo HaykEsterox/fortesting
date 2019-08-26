@@ -109,22 +109,27 @@
 //     return objKeys;
 // }
 //// console.log(loopObj(userClone));
-let obj = {};
-console.log(isEmpty(obj));
-obj.name="object";
-console.log(isEmpty(obj));
-
-function isEmpty(object) {
-    let x = 0;
-    for (let key in object){
-        x++
-    }
-    return (x>0)?true:false;
-}
+// let obj = {};
+// console.log(isEmpty(obj));
+// obj.name="object";
+// console.log(isEmpty(obj));
+//
+// function isEmpty(object) {
+//     let x = 0;
+//     for (let key in object){
+//         x++
+//     }
+//     return (x>0)?true:false;
+// }
 
 // let y = [1,2,3,1];
 // for (let x = 0 ;x<y.length;x++){
 //     console.log(y[x]);
 // }
 
-
+let name  = "Hayk";
+function sayhi(name){
+    var name  = "bitch works";
+    alert();
+}
+sayhi("name");
