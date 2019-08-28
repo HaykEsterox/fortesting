@@ -121,11 +121,50 @@
 //     }
 //     return (x>0)?true:false;
 // }
+<<<<<<< HEAD
+=======
 
-// let y = [1,2,3,1];
-// for (let x = 0 ;x<y.length;x++){
-//     console.log(y[x]);
+// short way
+// function isEmpty(obj) {
+//     for (let key in obj) {
+//         // if the loop has started, there is a property
+//         return false;
+//     }
+//     return true;
 // }
+//
+// let salaries = {
+//     John:0,
+//     Ann:0,
+//     Pete:0,
+// }
+// let x = 0;
+// for(let salary in salaries){
+//     x+=salaries[salary];
+// }
+// console.log((x>0)?x:"no Salary");
+
+
+// arrow functions
+let group = {
+    title: "Our Group",
+    students: "none",
+    marks:"none"
+};
+
+(() => {
+    let arr = [];
+    let x = 0;
+    for(let key in group){
+        arr[x]=group[key];
+        x++;
+    }
+    return console.log(arr);
+})();
+
+console.log(((a,b)=>a*b)(5,2));
+>>>>>>> 746fed18283f790d8b8b27d6ef34680c19b52b45
+
 
 let name  = "Hayk";
 function sayhi(name){
